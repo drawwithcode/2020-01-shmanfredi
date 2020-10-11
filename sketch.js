@@ -12,7 +12,7 @@ function setup() {
 
 function draw() {
   // put drawing code here
-  push();
+
   noFill();
   stroke(lerpColor(color('Cyan'), color('Crimson'), frameCount / 2160));
   strokeWeight(0.01);
