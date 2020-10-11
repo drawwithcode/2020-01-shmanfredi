@@ -14,20 +14,18 @@ function draw() {
   // put drawing code here
   push();
   noFill();
-  stroke(lerpColor(color('Cyan'), color('Crimson'), frameCount / 540));
+  stroke(lerpColor(color('Cyan'), color('Crimson'), frameCount / 2160));
   strokeWeight(0.01);
 
+
   translate (width / 2, height / 2);
-  scale(frameCount/120);
+  scale(mouseX/200);
 
   rotate(frameCount/120);
   rect(0, 0, 100, 100);
 
 
-  if (frameCount == 1080) {
+  if (frameCount == 2520) {
     noLoop();
   }
-  pop();
-
-
 }
